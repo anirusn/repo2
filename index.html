@@ -1,1229 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Arjun Furnitures</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Arjun Furnitures online store">
-  <meta name="keywords" content="HTML,CSS,XML,JavaScript, ecommerce">
-  <meta name="author" content="Arjun Neupane">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="img/ico" href="/favicon.png"/>
-  <link rel="stylesheet" href="css/style.css">
-  <style type="text/css">
-  p {
-    font-family:'Lato', Arial, sans-serif;
-    color: #6d6d6d;
-    font-size: 14px;
-    line-height: 1.9;
-  }
-  </style>
-
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-	<script type="text/javascript">
-
-	function alertBox(){
-		swal(" Your item is added to basket.");
-    swal({
-      title:"Thanks for shopping!",
-      text:"This item is successfully purchased.",
-      icon:"success"
-
-    });
-	}
-
-	</script>
-
-
-
+	<title>Arjun Neupane</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/countdowntime/flipclock.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
+<body>
+	
+	
+	<div class="bg-img1 size1 overlay1 p-t-24" style="background-image: url('images/bg01.jpg');">
+		<div class="flex-w flex-sb-m p-l-80 p-r-74 p-b-175 respon5">
+			<div class="wrappic1 m-r-30 m-t-10 m-b-10">
+				<a href="#"><img src="images/icons/logo.png" alt="LOGO"></a>
+			</div>
+
+			<div class="flex-w m-t-10 m-b-10">
+				<!--<a href="#" class="size3 flex-c-m how-social trans-04 m-r-6">
+					<i class="fa fa-facebook"></i>
+				</a> -->
+
+				<a href="#" class="size3 flex-c-m how-social trans-04 m-r-6">
+					<i class="fa fa-twitter"></i>
+				</a>
+
+				<!-- <a href="#" class="size3 flex-c-m how-social trans-04 m-r-6">
+					<i class="fa fa-youtube-play"></i>
+				</a> -->
+			</div>
+		</div>
+
+		<div class="flex-w flex-sa p-r-200 respon1">
+			<div class="p-t-34 p-b-60 respon3">
+				<p class="l1-txt1 p-b-10 respon2">
+					Our website is
+				</p>
+
+				<h3 class="l1-txt2 p-b-45 respon2 respon4">
+					Coming Soon
+				</h3>
+
+				<div class="cd100"></div>
+
+			</div>
+
+			<div class="bg0 wsize1 bor1 p-l-45 p-r-45 p-t-50 p-b-18 p-lr-15-sm">
+				<h3 class="l1-txt3 txt-center p-b-43">
+					Newsletter
+				</h3>
+
+				<form class="w-full validate-form">
+
+					<div class="wrap-input100 validate-input m-b-10" data-validate = "Name is required">
+						<input class="input100 placeholder0 s1-txt1" type="text" name="name" placeholder="Name">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-20" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100 placeholder0 s1-txt1" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<button class="flex-c-m size2 s1-txt2 how-btn1 trans-04">
+						Subscribe
+					</button>
+				</form>
+
+				<p class="s1-txt3 txt-center p-l-15 p-r-15 p-t-25">
+					And don’t worry, we hate spam too! You can unsubcribe at anytime.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/flipclock.min.js"></script>
+	<script src="vendor/countdowntime/moment.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script>
+		$('.cd100').countdown100({
+			/*Set Endtime here*/
+			/*Endtime must be > current time*/
+			endtimeYear: 0,
+			endtimeMonth: 0,
+			endtimeDate: 35,
+			endtimeHours: 18,
+			endtimeMinutes: 0,
+			endtimeSeconds: 0,
+			timeZone: "" 
+			// ex:  timeZone: "America/New_York"
+			//go to " http://momentjs.com/timezone/ " to get timezone
+		});
+
+		
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
-<body style="background-color: #ffffff; margin: 0; padding: 0;">
-  <div style="display: none; font-size: 1px; color: #fefefe;
-  line-height: 1px; font-family: 'Lato', Helvetica, Arial, sans-serif;
-  max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
-  Looks like you tried signing in a few too many times.
-  Let's see if we can get you back into your account.
-</div>
-
-  <!-- main table starts here -->
-
-  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td align="center" valign="top">
-
-
-        <table align="center" class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
-          <tr>
-            <td align="center" valign="top" style="padding-top:25px; padding-bottom: 10px; "><a href="#" target="_self">
-              <img src="img/logo.png" width="400" alt="LOGOHERE" border="0" style="display:block; font-family:'Lato', Arial, sans-serif; font-size:18px; line-height:21px; color:#ff1044;"></a></td>
-          </tr>
-          <tr>
-            <td class="em_hide" align="center" width="600">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%" height="60">
-                <tr>
-                  <td height="26" width="20"> </td>
-                  <td align="center" class="nav-menu"><a href="index.html" target="_self">HOME</a></td>
-                  <td width="19"> </td>
-                  <td align="center" class="nav-menu"><a href="products.html" target="_self">PRODUCTS </a></td>
-                  <td width="19"> </td>
-                  <td align="center" class="nav-menu"><a href="aboutus.html" target="_self">ABOUT </a></td>
-                  <td width="19"> </td>
-                  <td align="center" class="nav-menu"><a href="contact.html" target="_self">CONTACT </a></td>
-                  <td width="19"> </td>
-                  <td align="center" class="nav-menu"><a href="blog.html" target="_self">BLOG </a></td>
-                  <td width="19"> </td>
-                  <td align="center" class="nav-menu"><a href="research.html" target="_self" style="text-decoration:none; color:#ff1044;">RESEARCH</a></td>
-                  <td width="20"> </td>
-                </tr>
-              </table>
-              <!-- end nav -->
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <!-- HERO SECTION - WEB TEXT -->
-    <!--banner starts  here -->
-
-    <tr>
-      <td background="vertical-waves.png" bgcolor="#f09f00" valign="top">
-
-        <div>
-
-          <table align="center" class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
-            <tr>
-              <td align="right" valign="top">
-
-                <table align="right" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
-                  <tr>
-                    <td align="center" valign="top" style="padding-bottom:50px; padding-top:50px;">
-                      <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" valign="top" style="font-size:0;">
-
-
-                            <div style="display:inline-block; max-width:303px; vertical-align:top; width:100%;">
-                              <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:303px;">
-                                <tr>
-                                  <td align="left" valign="top">
-                                    <table width="303" align="left" cellpadding="0" cellspacing="0" border="0" class="em_wrapper">
-                                      <tr>
-                                        <td width="21" class="em_hide"> </td>
-                                        <td align="center" valign="top"><img src="img/hot.png" width="290" alt="" border="0" style="display:block;"></td>
-                                        <td width="1" class="em_hide"> </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
-                            </div>
-
-                            <div style="display:inline-block; max-width:265px; vertical-align:top; width:100%; text-align:left;">
-                              <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:265px;">
-                                <tr>
-                                  <td align="left" valign="top">
-                                    <table width="265" align="center" cellpadding="0" cellspacing="0" border="0" class="em_wrapper">
-                                      <tr>
-                                        <td class="em_hide" width="23" style="border-left: 2px solid #fff;"> </td>
-                                        <td align="center" valign="top" class="em_padtop">
-                                          <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-
-                                            <tr>
-                                              <td align="left" class="em_center" style="padding-bottom:10px; font-family: Futura, Futura-Medium, 'Futura Medium', 'Century Gothic', CenturyGothic, 'Apple Gothic', AppleGothic, 'URW Gothic L', 'Avant Garde', sans-serif; font-size:83px; line-height:84px; color:#ffffff; font-weight:300;"><span class="em_blue">20%<br>
-                                              OFF</span></td>
-                                            </tr>
-                                            <tr>
-                                              <td align="left" class="em_center" style="padding-bottom:10px; font-family:'Lato', Arial, sans-serif; font-size:21px; line-height:25px; color:#ff1044; font-weight:bold; letter-spacing:1px; text-transform:uppercase;"><span class="em_gray">+ FREE SHIPPING</span></td>
-                                            </tr>
-                                            <tr>
-                                              <td align="left" valign="top" style="padding-bottom:15px;">
-                                                <table align="left" cellpadding="0" cellspacing="0" border="0" class="em_wrapper">
-                                                  <tr>
-                                                    <td align="center" valign="top">
-                                                      <table align="center" cellpadding="0" cellspacing="0" border="0">
-                                                        <tr>
-                                                          <td align="center" valign="middle" class="em_wht" bgcolor="#ff1044" style="padding:10px 10px; font-size: 13px; font-family:'Lato', Arial, sans-serif; color: #ffffff;background-color: #ff1044; border-radius:2px;"><a href="#" target="_self" style="color: #ffffff; text-decoration: none; display: block; letter-spacing: 2px;">SHOP HOT ITEMS    <span style="font-size: 10px;">▶</span></a></td>
-                                                        </tr>
-                                                      </table>
-                                                    </td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td align="left" class="em_center" style="font-family:'Lato', Arial, sans-serif; font-size:13px; line-height:13px; color:#ffffff; letter-spacing: 2px;"><span style="font-weight: bold;">*Ends midnight tonight.</span></td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                        <td class="em_hide" width="21"> </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
-                            </div>
-
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-
-              </td>
-            </tr>
-          </table>
-
-        </div>
-      </td>
-    </tr>
-
-    <!--banner ends here -->
-
-
-
-    <!-- MAIN CONTENT -->
-
-    <!-- main showcase 1 starts here -->
-
-    <tr>
-      <td align="center" valign="top" bgcolor="#CACACA">
-
-
-
-
-        <table align="center" class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;" bgcolor="">
-
-          <!-- Row 1 starts here-->
-
-          <tr>
-            <td align="center" valign="top">
-              <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;" bgcolor="#ffffff">
-                <tr>
-                  <td align="center" valign="top">
-                    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-                      <tr>
-                        <td align="center" valign="top" style="font-size:0;">
-
-                          <!-- picture 1 starts here -->
-
-                          <div style="display:inline-block; max-width:300px; vertical-align:top; width:100%;">
-                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:300px;">
-                              <tr>
-                                <td align="left" valign="top">
-                                  <table width="300" align="left" cellpadding="0" cellspacing="0" border="0" class="em_wrapper">
-                                    <tr>
-                                      <td align="center" valign="top">
-                                        <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-                                          <tr>
-                                            <td align="center" valign="top" style="padding-bottom:0px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img src="img/product-img/pro-big-1.ajpg" width="300" height="300" alt="" border="0" style="display:block;"></a></td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </div>
-
-                          <!-- picture 1 ends here -->
-
-                          <!-- shopnow1 starts here -->
-
-                          <div style="display:inline-block; max-width:300px; vertical-align:middle; width:100%;">
-                            <!-- BUTTON -->
-                            <table border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td class="em_height_d" height="80"></td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="em_center" style="padding-bottom:10px; font-family: Futura, Futura-Medium, 'Futura Medium', 'Century Gothic', CenturyGothic, 'Apple Gothic', AppleGothic, 'URW Gothic L', 'Avant Garde', sans-serif; font-size:30px; line-height:30px; color:#ff1044; font-weight:bold; letter-spacing:1px; text-transform:uppercase;"><span class="em_gray">Mordern<br>
-                                Chair</span> <br> <p> From 18000 </p> </td>
-                              </tr>
-                              <tr>
-                                <td height="15"></td>
-                              </tr>
-                              <tr>
-                                <td class="table_radius" width="160" height="50" bgcolor="#ff1044" align="center">
-                                  <font face="'Montserrat', Arial, Helvetica, sans-serif"> <a class="hover-me-1" href="products.html" target="_self" style="color:#fff; text-decoration:none; display:inline-block; width:100%; line-height:50px; ">SHOP NOW</a>                                    </font>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="em_height_i" height="20"></td>
-                              </tr>
-                            </table>
-                            <!-- BUTTON -->
-                          </div>
-
-                          <!-- shopnow1 ends here -->
-
-
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-
-            </td>
-          </tr>
-
-          <!-- Row 1 ends here-->
-
-          <!-- Row 2 starts here-->
-
-          <tr>
-            <td align="center" valign="top" style="padding:0;">
-              <table dir="rtl" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
-                <tr>
-                  <td align="center" valign="top" style="font-size:0;">
-
-                    <!-- picture 2 starts here -->
-
-
-                    <div dir="ltr" style="display:inline-block; max-width:300px; vertical-align:top; width:100%;">
-                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:300px;">
-                        <tr>
-                          <td align="left" valign="top">
-                            <table width="300" align="left" cellpadding="0" cellspacing="0" border="0" class="em_wrapper">
-                              <tr>
-                                <td align="center" valign="top">
-                                  <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-                                    <tr>
-                                      <td align="center" valign="top" style="padding-bottom:0px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img src="img/2.jpg" width="300" height="300" alt="" border="0" style="display:block;"></a></td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-
-                    <!-- picture 2 ends here -->
-
-                    <!-- shopnow2 starts here -->
-
-
-                    <div dir="ltr" style="display:inline-block; max-width:300px; vertical-align:middle; width:100%;">
-                      <!-- BUTTON -->
-                      <table border="0" cellspacing="0" cellpadding="0" class="center-align">
-                        <tr>
-                          <td class="em_height_d" height="80"></td>
-                        </tr>
-                        <tr>
-                          <td align="center" class="em_center" style="padding-bottom:10px; font-family: Futura, Futura-Medium, 'Futura Medium', 'Century Gothic', CenturyGothic, 'Apple Gothic', AppleGothic, 'URW Gothic L', 'Avant Garde', sans-serif; font-size:25px; line-height:30px; color:#ff1044; font-weight:bold; letter-spacing:1px; text-transform:uppercase;"><span class="em_gray">Minimal<br>
-                          Plant Pot</span><p> From 18000 </p></td>
-                        </tr>
-                        <tr>
-                          <td height="15"></td>
-                        </tr>
-                        <tr>
-                          <td class="table_none" width="160" height="50" bgcolor="#ff1044" align="center" style="
-                          font-family:'Montserrat', Arial, Helvetica, sans-serif;
-                          font-size:18px;
-                          color:#ffffff;
-                          display:block;
-                          vertical-align:middle;
-                          font-weight:400;
-                          -webkit-text-size-adjust: none;
-                          border:2px solid #fff; ">
-                            <font face="'Montserrat', Arial, Helvetica, sans-serif"> <a class="hover-me-1" href="#" target="_self" style="color:#fff; text-decoration:none; display:inline-block; width:100%; line-height:50px">SHOP NOW</a> </font>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="em_height_i" height="20"></td>
-                        </tr>
-                      </table>
-                      <!-- BUTTON -->
-                    </div>
-
-                    <!-- shopnow2 ends here -->
-
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <!-- Row 2 ends here-->
-
-          <!-- Row 3 starts here-->
-
-          <tr>
-            <td align="center" valign="top">
-
-              <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;" bgcolor="#ffffff">
-                <tr>
-                  <td align="center" valign="top" style="padding: 0px;">
-                    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-                      <tr>
-                        <td align="center" valign="top" style="font-size:0;">
-
-                          <!-- picture 3 starts here -->
-
-
-                          <div style="display:inline-block; max-width:300px; vertical-align:top; width:100%;">
-                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:300px;">
-                              <tr>
-                                <td align="left" valign="top">
-                                  <table width="300" align="left" cellpadding="0" cellspacing="0" border="0" class="em_wrapper">
-                                    <tr>
-                                      <td align="center" valign="top">
-                                        <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-                                          <tr>
-                                            <td align="center" valign="top" style="padding-bottom:0px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img src="img/5.jpg" width="300" height="300" alt="" border="0" style="display:block;"></a></td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </div>
-
-                          <!-- picture 3 ends here -->
-
-                          <!-- shopnow3 starts here -->
-
-
-                          <div style="display:inline-block; max-width:300px; vertical-align:middle; width:100%;">
-                            <!-- BUTTON -->
-                            <table border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td class="em_height_d" height="80"></td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="em_center" style="padding-bottom:10px; font-family: Futura, Futura-Medium, 'Futura Medium', 'Century Gothic', CenturyGothic, 'Apple Gothic', AppleGothic, 'URW Gothic L', 'Avant Garde', sans-serif; font-size:30px; line-height:25px; color:#ff1044; font-weight:bold; letter-spacing:1px; text-transform:uppercase;"><span class="em_gray">Plant Pot<br>
-                                </span><p> From 18000 </p></td>
-                              </tr>
-                              <tr>
-                                <td height="15"></td>
-                              </tr>
-                              <tr>
-                                <td class="table_none" width="160" height="50" bgcolor="#ff1044" align="center">
-                                  <font face="'Montserrat', Arial, Helvetica, sans-serif"> <a class="hover-me-1" href="#" target="_self" style="color:#fff; text-decoration:none; display:inline-block; width:100%; line-height:50px">SHOP NOW</a>                                    </font>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="em_height_i" height="20"></td>
-                              </tr>
-                            </table>
-                            <!-- BUTTON -->
-                          </div>
-
-                          <!-- shopnow3 ends here -->
-
-
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <!-- Row 3 ends here-->
-
-          <!-- Row 4 starts here-->
-
-          <tr>
-            <td align="center" valign="top" style="padding:0;">
-              <table dir="rtl" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
-                <tr>
-                  <td align="center" valign="top" style="font-size:0;">
-
-                    <!-- picture 4 starts here -->
-
-
-                    <div dir="ltr" style="display:inline-block; max-width:300px; vertical-align:top; width:100%;">
-                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:300px;">
-                        <tr>
-                          <td align="left" valign="top">
-                            <table width="300" align="left" cellpadding="0" cellspacing="0" border="0" class="em_wrapper">
-                              <tr>
-                                <td align="center" valign="top">
-                                  <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-                                    <tr>
-                                      <td align="center" valign="top" style="padding-bottom:0px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img src="img/bg-img/7.jpg" width="300" height="300" alt="" border="0" style="display:block;"></a></td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-
-                    <!-- picture 4 ends here -->
-
-                    <!-- shopnow4 starts here -->
-
-                    <div dir="ltr" style="display:inline-block; max-width:300px; vertical-align:middle; width:100%;">
-                      <!-- BUTTON -->
-                      <table border="0" cellspacing="0" cellpadding="0" class="center-align">
-                        <tr>
-                          <td class="em_height_d" height="80"></td>
-                        </tr>
-                        <tr>
-                          <td align="center" class="em_center" style="padding-bottom:10px; font-family: Futura, Futura-Medium, 'Futura Medium', 'Century Gothic', CenturyGothic, 'Apple Gothic', AppleGothic, 'URW Gothic L', 'Avant Garde', sans-serif; font-size:30px; line-height:30px; color:#ff1044; font-weight:bold; letter-spacing:1px; text-transform:uppercase;"><span class="em_gray">Metalic<br>
-                          Chair</span><p> From 18000 </p></td>
-                        </tr>
-                        <tr>
-                          <td height="15"></td>
-                        </tr>
-                        <tr>
-                          <td class="table_none" width="160" height="50" bgcolor="#ff1044" align="center">
-                            <font face="'Montserrat', Arial, Helvetica, sans-serif"> <a class="hover-me-1" href="#" target="_self" style="color:#fff; text-decoration:none; display:inline-block; width:100%; line-height:50px">SHOP NOW</a>                              </font>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="em_height_i" height="20"></td>
-                        </tr>
-                      </table>
-                      <!-- BUTTON -->
-                    </div>
-
-                    <!-- shopnow4 ends here -->
-
-
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <!-- Row 4 ends here-->
-
-        </table>
-
-      </td>
-    </tr>
-
-    <!-- main showcase1 ends here -->
-
-    <!-- END MAIN CONTENT -->
-    <!-- MAIN CONTENT -->
-
-    <!-- main showcase2 starts here -->
-
-
-    <tr>
-      <td align="center" valign="top" bgcolor="#CACACA">
-
-        <table align="center" class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
-
-          <!-- Row 5 starts here-->
-
-          <tr>
-            <td align="center" valign="top">
-
-              <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;">
-                <tr>
-                  <td align="center" valign="top">
-                    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#f09f00">
-                      <tr>
-                        <td align="center" valign="top" style="font-size:0;">
-
-                          <!-- picture 5 starts here -->
-
-                          <div style="display:inline-block; max-width:300px; vertical-align:top; width:100%;">
-                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:300px;">
-                              <tr>
-                                <td align="left" valign="top">
-                                  <table width="300" align="left" cellpadding="0" cellspacing="0" border="0" class="em_wrapper">
-                                    <tr>
-                                      <td align="center" valign="top">
-                                        <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-                                          <tr>
-                                            <td align="center" valign="top" style="padding-bottom:0px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img src="img/bg-img/6.jpg" width="300" height="300" alt="" border="0" style="display:block;"></a></td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </div>
-
-                          <!-- picture 5 ends here -->
-
-                          <!-- shopnow5 starts here -->
-
-                          <div style="display:inline-block; max-width:300px; vertical-align:middle; width:100%;">
-                            <!-- BUTTON -->
-                            <table border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td class="em_height_d" height="80"></td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="em_center" style="padding-bottom:10px; font-family: Futura, Futura-Medium, 'Futura Medium', 'Century Gothic', CenturyGothic, 'Apple Gothic', AppleGothic, 'URW Gothic L', 'Avant Garde', sans-serif; font-size:30px; line-height:30px; color:#ffffff; font-weight:bold; letter-spacing:1px; text-transform:uppercase;"><span class="em_gray">Small<br/>Table</span><p style="color: white;"> From 18000 </p></td>
-                              </tr>
-                              <tr>
-                                <td height="15"></td>
-                              </tr>
-                              <tr>
-                                <td class="table_radius" width="160" height="50" bgcolor="#f09f00" align="center">
-                                  <font face="'Montserrat', Arial, Helvetica, sans-serif"> <a class="hover-me-1" href="#" target="_self" style="color:#fff; text-decoration:none; display:inline-block; width:100%; line-height:50px; ">SHOP NOW</a>                                    </font>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="em_height_i" height="20"></td>
-                              </tr>
-                            </table>
-                            <!-- BUTTON -->
-                          </div>
-
-                          <!-- shopnow5 ends here -->
-
-
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-
-            </td>
-          </tr>
-
-          <!-- Row 5 ends here-->
-
-
-          <!-- Row 6 starts here-->
-
-          <tr>
-            <td align="center" valign="top" style="padding:0;">
-              <table dir="rtl" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#f09f00">
-                <tr>
-                  <td align="center" valign="top" style="font-size:0;">
-
-                    <!-- picture 6 starts here -->
-
-                    <div dir="ltr" style="display:inline-block; max-width:300px; vertical-align:top; width:100%;">
-                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:300px;">
-                        <tr>
-                          <td align="left" valign="top">
-                            <table width="300" align="left" cellpadding="0" cellspacing="0" border="0" class="em_wrapper">
-                              <tr>
-                                <td align="center" valign="top">
-                                  <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-                                    <tr>
-                                      <td align="center" valign="top" style="padding-bottom:0px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img src="img/bg-img/4.jpg" width="300" height="300" alt="" border="0" style="display:block;"></a></td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-
-                    <!-- picture 6 ends here -->
-
-                    <!-- shopnow6 starts here -->
-
-                    <div dir="ltr" style="display:inline-block; max-width:300px; vertical-align:middle; width:100%;">
-                      <!-- BUTTON -->
-                      <table border="0" cellspacing="0" cellpadding="0" class="center-align">
-                        <tr>
-                          <td class="em_height_d" height="80"></td>
-                        </tr>
-                        <tr>
-                          <td align="center" class="em_center" style="padding-bottom:10px; font-family: Futura, Futura-Medium, 'Futura Medium', 'Century Gothic', CenturyGothic, 'Apple Gothic', AppleGothic, 'URW Gothic L', 'Avant Garde', sans-serif; font-size:30px; line-height:30px; color:#ffffff; font-weight:bold; letter-spacing:1px; text-transform:uppercase;"><span class="em_gray">Night<br>
-                          Stand</span><p style="color: white;"> From 18000 </p></td>
-                        </tr>
-                        <tr>
-                          <td height="15"></td>
-                        </tr>
-                        <tr>
-                          <td class="table_none" width="160" height="50" bgcolor="#f09f00" align="center">
-                            <font face="'Montserrat', Arial, Helvetica, sans-serif"> <a class="hover-me-1" href="#" target="_self" style="color:#fff; text-decoration:none; display:inline-block; width:100%; line-height:50px">SHOP NOW</a>                              </font>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="em_height_i" height="20"></td>
-                        </tr>
-                      </table>
-                      <!-- BUTTON -->
-                    </div>
-
-                    <!-- shopnow6 ends here -->
-
-
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <!-- Row 6 ends here-->
-
-          <!-- Row 7 starts here-->
-
-          <tr>
-            <td align="center" valign="top">
-
-              <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;">
-                <tr>
-                  <td align="center" valign="top" style="padding: 0px;">
-                    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#f09f00">
-                      <tr>
-                        <td align="center" valign="top" style="font-size:0;">
-
-                          <!-- picture 7 starts here -->
-
-                          <div style="display:inline-block; max-width:300px; vertical-align:top; width:100%;">
-                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:300px;">
-                              <tr>
-                                <td align="left" valign="top">
-                                  <table width="300" align="left" cellpadding="0" cellspacing="0" border="0" class="em_wrapper">
-                                    <tr>
-                                      <td align="center" valign="top">
-                                        <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-                                          <tr>
-                                            <td align="center" valign="top" style="padding-bottom:0px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img src="img/bg-img/8.jpg" width="300" height="300" alt="" border="0" style="display:block;"></a></td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </div>
-
-                          <!-- picture 7 ends here -->
-
-                          <!-- shopnow7 starts here -->
-
-                          <div style="display:inline-block; max-width:300px; vertical-align:middle; width:100%;">
-                            <!-- BUTTON -->
-                            <table border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td class="em_height_d" height="80"></td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="em_center" style="padding-bottom:10px; font-family: Futura, Futura-Medium, 'Futura Medium', 'Century Gothic', CenturyGothic, 'Apple Gothic', AppleGothic, 'URW Gothic L', 'Avant Garde', sans-serif; font-size:30px; line-height:25px; color:#ffffff; font-weight:bold; letter-spacing:1px; text-transform:uppercase;"><span class="em_gray">Rocking<br>
-                                Chair</span><p style="color: white;"> From 18000 </p></td>
-                              </tr>
-                              <tr>
-                                <td height="15"></td>
-                              </tr>
-                              <tr>
-                                <td class="table_none" width="160" height="50" bgcolor="#f09f00" align="center">
-                                  <font face="'Montserrat', Arial, Helvetica, sans-serif"> <a class="hover-me-1" href="#" target="_self" style="color:#fff; text-decoration:none; display:inline-block; width:100%; line-height:50px">SHOP NOW</a>                                    </font>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="em_height_i" height="20"></td>
-                              </tr>
-                            </table>
-                            <!-- BUTTON -->
-                          </div>
-
-                          <!-- shopnow7 starts here -->
-
-
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-
-            </td>
-          </tr>
-
-          <!-- Row 7 ends here-->
-
-          <!-- Row 8 starts here-->
-
-
-          <tr>
-            <td align="center" valign="top" style="padding:0;">
-              <table dir="rtl" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#f09f00">
-                <tr>
-                  <td align="center" valign="top" style="font-size:0;">
-
-                    <!-- picture 8 starts here -->
-
-                    <div dir="ltr" style="display:inline-block; max-width:300px; vertical-align:top; width:100%;">
-                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:300px;">
-                        <tr>
-                          <td align="left" valign="top">
-                            <table width="300" align="left" cellpadding="0" cellspacing="0" border="0" class="em_wrapper">
-                              <tr>
-                                <td align="center" valign="top">
-                                  <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-                                    <tr>
-                                      <td align="center" valign="top" style="padding-bottom:0px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img src=" img/bg-img/9.jpg" width="300" height="300" alt="" border="0" style="display:block;"></a></td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-
-                    <!-- picture 8 ends here -->
-
-                    <!-- shopnow8 starts here -->
-
-                    <div dir="ltr" style="display:inline-block; max-width:300px; vertical-align:middle; width:100%;">
-                      <!-- BUTTON -->
-                      <table border="0" cellspacing="0" cellpadding="0" class="center-align">
-                        <tr>
-                          <td class="em_height_d" height="80"></td>
-                        </tr>
-                        <tr>
-                          <td align="center" class="em_center" style="padding-bottom:10px; font-family: Futura, Futura-Medium, 'Futura Medium', 'Century Gothic', CenturyGothic, 'Apple Gothic', AppleGothic, 'URW Gothic L', 'Avant Garde', sans-serif; font-size:30px; line-height:30px; color:#ffffff; font-weight:bold; letter-spacing:1px; text-transform:uppercase;"><span class="em_gray">Home<br>
-                         Deco</span><p style="color: white;"> From 18000 </p> </td>
-                        </tr>
-                        <tr>
-                          <td height="15"></td>
-                        </tr>
-                        <tr>
-                          <td class="table_none" width="160" height="50" bgcolor="#f09f00" align="center">
-                            <font face="'Montserrat', Arial, Helvetica, sans-serif"> <a class="hover-me-1" href="#" target="_self" style="color:#fff; text-decoration:none; display:inline-block; width:100%; line-height:50px">SHOP NOW</a> </font>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="em_height_i" height="20"></td>
-                        </tr>
-                      </table>
-                      <!-- BUTTON -->
-                    </div>
-
-                    <!-- shopnow8 ends here -->
-
-
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <!-- Row 8 ends here-->
-
-
-        </table>
-
-      </td>
-    </tr>
-    <!-- END MAIN CONTENT -->
-
-    <!-- main showcase2 ends here -->
-
-
-
-
-    <!-- UPSELL SECTION 1 -->
-    <tr>
-      <td align="center" valign="top" bgcolor="">
-
-        <table align="center" class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
-          <tr>
-            <td align="center" valign="top">
-
-              <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;">
-                <tr>
-                  <td align="center" valign="top" style="padding-top:40px;">
-                    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-                      <tr>
-                        <td align="center" class="em_gray" style="padding-bottom:22px; font-family: Futura, Futura-Medium, 'Futura Medium', 'Century Gothic', CenturyGothic, 'Apple Gothic', AppleGothic, 'URW Gothic L', 'Avant Garde', sans-serif; font-size:25px; line-height:25px; color:#000000; font-weight:bold; letter-spacing:1px; text-transform:uppercase;"><a href="#" target="_self" style="text-decoration:none; color:#000000;">YOU MAY ALSO LIKE</a></td>
-                      </tr>
-
-                    </table>
-                  </td>
-                </tr>
-              </table>
-
-            </td>
-          </tr>
-
-          <!--first row starts here-->
-
-          <tr>
-            <td align="center" valign="top" 600>
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td valign="top">
-                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="200" class="columnWrapper">
-                      <tr>
-                        <td valign="top" class="columnContainer">
-
-                          <!--showcase 1 starts here-->
-
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td valign="top" style="padding:9px;">
-                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="false">
-                                  <tr>
-                                    <td align="center" valign="top" style="padding-bottom:10px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img class="em_img" src="img/wing_chair.JPG" width="180" height="180" alt="" border="0" style="display:block;"/></a></td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" style="padding-bottom:5px; font-family:'Lato', Arial, sans-serif; font-size:12px; line-height:18px; color:#000;">Wing Chair<br>
-                                      <span style="font-style: italic; color:#739FB1;">Rs 5500</span></td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-
-                          <!--showcase 1 ends here-->
-
-                          <!--Buy now button starts here-->
-
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;">
-                            <tr>
-                              <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center">
-                                <table border="0" cellpadding="0" cellspacing="0" width="80%" style="border-collapse: separate;border-radius: 0px;background-color: #000000;">
-                                  <tr>
-                                    <td align="center" valign="middle" style="font-family: Arial; font-size: 16px; padding: 11px;"><a title="Buy Now" href="#" target="_self" onclick="alertBox();" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Buy Now</a></td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-
-                          <!--Buy now button ends here-->
-
-                        </td>
-                      </tr>
-                    </table>
-
-
-                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="200" class="columnWrapper">
-                      <tr>
-                        <td valign="top" class="columnContainer">
-
-                          <!--showcase 2 starts here-->
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td valign="top" style="padding:9px;">
-                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="false">
-                                  <tr>
-                                    <td align="center" valign="top" style="padding-bottom:10px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img class="em_img" src="img/side_table.JPG" width="180" height="180" alt="" border="0" style="display:block;"/></a></td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" style="padding-bottom:5px; font-family:'Lato', Arial, sans-serif; font-size:12px; line-height:18px; color:#000;">Side Table<br>
-                                      <span style="font-style: italic; color:#739FB1;">Rs 6000</span></td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-
-                          <!--showcase 2 ends here-->
-
-                          <!--Buy now button starts here-->
-
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;">
-                            <tr>
-                              <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center">
-                                <table border="0" cellpadding="0" cellspacing="0" width="80%" style="border-collapse: separate; border-radius: 0px;background-color: #000000;">
-                                  <tr>
-                                    <td align="center" valign="middle" style="font-family: Arial; font-size: 16px; padding: 11px;"><a title="Buy Now" href="#" target="_self" onclick="alertBox();" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Buy Now</a></td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-
-                          <!--Buy now button ends here-->
-                        </td>
-                      </tr>
-                    </table>
-
-
-                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="200" class="columnWrapper">
-                      <tr>
-                        <td valign="top" class="columnContainer">
-
-                          <!--showcase 3 starts here-->
-
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td valign="top" style="padding:9px;">
-                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="false">
-                                  <tr>
-                                    <td align="center" valign="top" style="padding-bottom:10px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img class="em_img" src="img/cabinet.jpg" width="180" height="180" alt="" border="0" style="display:block;"/></a></td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" style="padding-bottom:5px; font-family:'Lato', Arial, sans-serif; font-size:12px; line-height:18px; color:#000;">Cabinet<br>
-                                      <span style="font-style: italic; color:#739FB1;">Rs 10000</span></td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-
-                          <!--showcase 3 ends here-->
-
-                          <!--Buy now button starts here-->
-
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;">
-                            <tr>
-                              <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center">
-                                <table border="0" cellpadding="0" cellspacing="0" width="80%" style="border-collapse: separate; border-radius: 0px;background-color: #000000;">
-                                  <tr>
-                                    <td align="center" valign="middle" style="font-family: Arial; font-size: 16px; padding: 11px;"><a title="Buy Now" href="#" target="_self" onclick="alertBox();" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Buy Now</a></td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-
-                          <!--Buy now button ends here-->
-
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-
-          <!--second row starts here -->
-
-          <tr>
-            <td align="center" valign="top" 600>
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td valign="top">
-
-
-
-                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="200" class="columnWrapper">
-                      <tr>
-                        <td valign="top" class="columnContainer">
-
-                          <!--showcase 4 starts here-->
-
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td valign="top" style="padding:9px;">
-                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="false">
-                                  <tr>
-                                    <td align="center" valign="top" style="padding-bottom:10px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img class="em_img" src="img/storage.jpg " width="180" height="180" alt="" border="0" style="display:block;"/></a></td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" style="padding-bottom:5px; font-family:'Lato', Arial, sans-serif; font-size:12px; line-height:18px; color:#000;">Storage with doors<br>
-                                      <span style="font-style: italic; color:#739FB1;">Rs 20000</span></td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-
-                          <!--showcase 4 ends here-->
-
-                          <!--Buy now button starts here-->
-
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;">
-                            <tr>
-                              <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center">
-                                <table border="0" cellpadding="0" cellspacing="0" width="80%" style="border-collapse: separate; border-radius: 0px;background-color: #000000;">
-                                  <tr>
-                                    <td align="center" valign="middle" style="font-family: Arial; font-size: 16px; padding: 11px;"><a title="Buy Now" href="#" target="_self" onclick="alertBox();" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Buy Now</a></td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-
-                          <!--Buy now button ends here-->
-                        </td>
-                      </tr>
-                    </table>
-
-
-
-                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="200" class="columnWrapper">
-                      <tr>
-                        <td valign="top" class="columnContainer">
-
-                          <!--showcase 5 starts here-->
-
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td valign="top" style="padding:9px;">
-                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="false">
-                                  <tr>
-                                    <td align="center" valign="top" style="padding-bottom:10px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img class="em_img" src="img/bed.jpg" width="180" height="180" alt="" border="0" style="display:block;"/></a></td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" style="padding-bottom:5px; font-family:'Lato', Arial, sans-serif; font-size:12px; line-height:18px; color:#000;">Bed<br>
-                                      <span style="font-style: italic; color:#739FB1;">Rs 30000</span></td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                          <!--showcase 5 ends here-->
-
-                          <!--Buy now button starts here-->
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;">
-                            <tr>
-                              <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center">
-                                <table border="0" cellpadding="0" cellspacing="0" width="80%" style="border-collapse: separate;border-radius: 0px;background-color: #000000;">
-                                  <tr>
-                                    <td align="center" valign="middle" style="font-family: Arial; font-size: 16px; padding: 11px;"><a title="Buy Now" href="#" target="_self" onclick="alertBox();" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Buy Now</a></td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-
-                          </table>
-                          <!--Buy now button ends here-->
-
-                        </td>
-                      </tr>
-                    </table>
-
-                    <!--showcase 6 starts here-->
-
-                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="200" class="columnWrapper">
-                      <tr>
-                        <td valign="top" class="columnContainer">
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td valign="top" style="padding:9px;">
-                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="false">
-                                  <tr>
-                                    <td align="center" valign="top" style="padding-bottom:10px;"><a href="#" target="_self" style="text-decoration:none; color:#000000;"><img class="em_img" src="img/sofa.jpg" width="180" height="180" alt="" border="0" style="display:block;"/></a></td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" style="padding-bottom:5px; font-family:'Lato', Arial, sans-serif; font-size:12px; line-height:18px; color:#000;">Sofa<br>
-                                      <span style="font-style: italic; color:#739FB1;">Rs 25000</span></td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                          <!--showcase 6 ends here-->
-
-                          <!--Buy now button starts here-->
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;">
-                            <tr>
-                              <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center">
-                                <table border="0" cellpadding="0" cellspacing="0" width="80%" style="border-collapse: separate; border-radius: 0px;background-color: #000000;">
-                                  <tr>
-                                    <td align="center" valign="middle" style="font-family: Arial; font-size: 16px; padding: 11px;"><a title="Buy Now" href="#" target="_self" onclick="alertBox();" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Buy Now</a></td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                          <!--Buy now button ends here-->
-
-                        </td>
-                      </tr>
-                    </table>
-
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-
-
-      </td>
-    </tr>
-    <!-- END UPSELL SECTION 1 -->
-
-    <!-- footer -->
-    <tr>
-      <td align="center" valign="top" bgcolor="#ffffff" style="padding: 30px 0;">
-
-        <table align="center" class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
-
-
-          <tr>
-            <td align="center" valign="top" style="padding-bottom:20px;">
-              <table align="center" cellpadding="0" cellspacing="0" border="0" width="600" class="em_wrapper">
-                <tr>
-                  <td class="em_hide" height="30" style="font-size:1px;line-height:1px; border-bottom:solid 1px #E0E0E0;"> </td>
-                </tr>
-                <tr>
-                  <td class="em_hide" height="15" style="font-size:1px;line-height:1px;"> </td>
-                </tr>
-                <tr>
-                  <td align="center" class="em_hide">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="400">
-                      <tr>
-                        <td align="left" width="100"><img alt="THE ALL GOOD GUARANTEE" border="0" src="img/all_good_2.png" style="display:block;" width="80"></td>
-                        <td align="left" style="font-family:'Lato', Arial, sans-serif; color:#000000; font-size:13px; line-height:19px; padding-left:10px;">
-                          <span style="font-weight: bold;">The All-Good Guarantee</span><br> No-hassle returns. Because the world isn't perfect.<br>
-                          <em>But it should be.</em>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="em_hide" height="15" style="font-size:1px;line-height:1px;"> </td>
-                </tr>
-                <tr>
-                  <td height="30" style="font-size:1px;line-height:1px; border-top:solid 1px #E0E0E0;"> </td>
-                </tr>
-                <tr>
-                  <td class="em_hide" height="15" style="font-size:1px;line-height:1px;"> </td>
-                </tr>
-
-                <tr>
-                  <td height="30" style="font-size:1px;line-height:1px;"> </td>
-                </tr>
-                <tr>
-                  <td align="center" valign="top"><img src="img/social_banner.jpg"></td>
-                </tr>
-                <tr>
-                  <td align="center" valign="top" style="padding-bottom:10px;">
-                    <table align="center" cellpadding="0" cellspacing="0" border="0">
-                      <tr>
-                        <td align="center" valign="top"><a href="http://facebook.com" target="_self"><img src="img/facebook.jpg"></a></td>
-                        <td width="5"></td>
-                        <td align="center" valign="top"><a href="http://twitter.com" target="_self"><img src="img/twitter.jpg"></a></td>
-                        <td width="5"></td>
-                        <td align="center" valign="top"><a href="http://instagram.com" target="_self"><img src="img/instagram.jpg"></a></td>
-                        <td width="5"></td>
-                        <td align="center" valign="top"><a href="http://pinterest.com" target="_self"><img src="img/pinterest.jpg"></a></td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-
-
-                <tr>
-                  <td align="center" class="em_footer" style="padding-bottom:15px; font-family:'Lato', Arial, sans-serif; font-size:12px; line-height:17px; color:#000000; padding: 3px 20px"> Birauta 17 Pokhara, 33807 </td>
-                </tr>
-
-                <tr>
-                  <td align="center" class="em_footer" style="padding-bottom:15px; font-family:'Lato', Arial, sans-serif; font-size:12px; line-height:17px; color:#000000; padding: 20px 20px">© Arjun Neupane </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- end footer -->
-        </table>
-
-      </td>
-    </tr>
-  </table>
 </body>
-
 </html>
